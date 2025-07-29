@@ -21,6 +21,11 @@ export default function ClientBlog({ blogs }: { blogs: BlogPost[] }) {
     activeFilter === "all"
       ? blogs
       : blogs.filter((b) => b.category === activeFilter);
+  const categoryCounts = blogs.reduce<Record<string, number>>((acc, blog) => {
+    acc[blog.category] = (acc[blog.category] || 0) + 1;
+    acc["all"] = (acc["all"] || 0) + 1;
+    return acc;
+  }, {});
 
   return (
     <main className="flex min-h-screen flex-col text-white p-8 md:p-16 lg:p-24 max-w-4xl mx-auto mt-5 md:mt-0">
@@ -41,7 +46,7 @@ export default function ClientBlog({ blogs }: { blogs: BlogPost[] }) {
                   : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-white"
               } transition`}
             >
-              {cat}
+              {cat} ({categoryCounts[cat] ?? 0})
             </button>
           ))}
         </div>
