@@ -1,9 +1,9 @@
 const experience = [
   {
-    title: "inncircles",
-    position: "software developer intern",
-    date: "aug 2025 - present",
-    link: "https://inncircles.com",
+    title: "not working",
+    position: "to be updated",
+    date: "to be updated",
+    link: "",
   },
 
 ];
