@@ -12,7 +12,7 @@ type BlogPost = {
   published: boolean;
 };
 
-const CATEGORIES = ["all", "space", "tech", "short", "social"];
+const CATEGORIES = ["all", "space", "tech", "social", "design case studies"];
 
 export default function ClientBlog({ blogs }: { blogs: BlogPost[] }) {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -28,7 +28,7 @@ export default function ClientBlog({ blogs }: { blogs: BlogPost[] }) {
   }, {});
 
   return (
-    <main className="flex min-h-screen flex-col text-white p-8 md:p-16 lg:p-24 max-w-4xl mx-auto mt-5 md:mt-0">
+    <main className="flex min-h-screen flex-col text-white p-8 md:p-16 lg:p-24 max-w-6xl mx-auto mt-5 md:mt-0">
       <div className="flex-1">
         <h1 className="text-3xl text-white font-bold mb-6">
           <span className="text-green-300">&gt;</span> blogs
