@@ -18,12 +18,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.geethsowri.vercel.app"),
   title: {
-    default: "geethsowri",
-    template: "%s | geethsowri",
+    default: "Geeth Sowri",
+    template: "%s | Geeth Sowri",
   },
   description: "student",
   openGraph: {
-    title: "geethsowri",
+    title: "Geeth Sowri",
     description: "student",
     url: "https://www.geethsowri.vercel.app",
     siteName: "geethsowri",
@@ -43,7 +43,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@ngeethsowri",
   },
+  icons: {
+    icon: "/favicon2.svg",
+  },
 };
+
 
 export default function RootLayout({
   children,
