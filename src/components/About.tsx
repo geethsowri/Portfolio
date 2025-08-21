@@ -38,7 +38,7 @@ export default function About() {
         </p>
 
         <p className="text-gray-300 leading-relaxed tracking-wide">
-          mern, figma & coffee
+          webdev, figma & coffee
         </p>
       </div>
     </section>
