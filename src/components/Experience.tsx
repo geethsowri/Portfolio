@@ -1,6 +1,6 @@
 const experience = [
   {
-    title: "not working",
+    title: "to be updated",
     position: "to be updated",
     date: "to be updated",
     link: "",
